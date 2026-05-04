@@ -23,9 +23,10 @@ qcar2_bezier:
     # In xyv mode, each waypoint is [x, y, v].
     # Coordinates x,y are in the map frame. Do not flip x if the points come from RViz/map.
     waypoints: [
-       0.0,  0.0, 0.35,
-      -1.5,  0.2, 0.35,
-      -3.0,  1.0, 0.35
+      0.0,  0.0, 0.0,
+      -1.0, 0.2, 0.35,
+      -2.0,  0.2, 0.3,
+      -4.0,  1.0, 0.0,
     ]
 
     # Auto-computation options for waypoint_format="xyv".
