@@ -46,53 +46,6 @@ Quanser QCar2 physical platform
 
 ---
 
-## Repository Structure
-
-```bash
-PFE_QCar2_2026/
-├── Maps/
-│   └── d215_map.yaml
-│
-└── ros2/
-    ├── build/
-    ├── install/
-    ├── log/
-    └── src/
-        ├── qcar2_interfaces/
-        │   ├── msg/
-        │   │   ├── BooleanLeds.msg
-        │   │   └── MotorCommands.msg
-        │   ├── CMakeLists.txt
-        │   └── package.xml
-        │
-        └── qcar2_nodes/
-            ├── config/
-            │   ├── qcar2_2d.lua
-            │   ├── qcar2_slam_and_nav.yaml
-            │   ├── qcar2_localization_and_nav.yaml
-            │   └── qcar2_trajectory.yaml
-            │
-            ├── launch/
-            │   ├── qcar2_slam_and_nav_bringup_launch.py
-            │   ├── qcar2_cartographer_launch.py
-            │   ├── qcar2_bezier_launch.py
-            │   ├── qcar2_localize_and_nav_launch.py
-            │   └── ...
-            │
-            ├── src/
-            │   ├── qcar2_bezier.cpp
-            │   ├── qcar2_hardware.cpp
-            │   ├── qcar2_odometry.cpp
-            │   ├── lidar.cpp
-            │   ├── nav2_qcar_command_convert.cpp
-            │   └── ...
-            │
-            ├── CMakeLists.txt
-            └── package.xml
-```
-
----
-
 ## ROS 2 Packages
 
 ### `qcar2_interfaces`
