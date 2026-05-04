@@ -277,22 +277,13 @@ It converts Nav2 velocity commands into QCar2-specific motor commands for thrott
 
 ## Current Completed Milestone
 
-The current GitHub version focuses on the completed trajectory and navigation bringup milestone.
+The current GitHub version focuses on the completed system exploration, SLAM/Nav2 bringup, and trajectory generation milestones.
 
 Implemented:
 
-- ROS 2 workspace setup for Quanser QCar2
-- Custom QCar2 interfaces
-- QCar2 hardware integration
-- QCar2 odometry
-- LiDAR integration
-- TF setup for LiDAR frame
-- Cartographer SLAM bringup
-- Nav2 navigation bringup
-- Nav2-to-QCar2 command conversion
-- Bezier trajectory generation
-- RViz trajectory visualization
-
+- Explored the Quanser QCar2 platform, tested the onboard camera and LiDAR, collected sensor data, and visualized them through the remote development setup using SSH.
+- Applied SLAM and Nav2 to scan the environment, generate a map, and navigate inside the mapped area using a PID-based control approach.
+- Used the QCar2 kinematic model to generate trajectories that better match the vehicle motion constraints instead of relying only on the default Nav2-generated trajectory, and visualized the generated trajectories in RViz.
 ---
 
 ## Work in Progress
@@ -304,19 +295,6 @@ The following components are under active development:
 - Closed-loop optimal control for trajectory following
 
 These parts are intentionally marked as work in progress and are not the main focus of the current portfolio milestone.
-
----
-
-## Demo Results
-
-Demo results will be added later.
-
-Planned content:
-
-- RViz screenshot of the generated Bezier trajectory
-- SLAM/navigation screenshot
-- QCar2 physical platform demonstration
-- Optional video or GIF of the system running
 
 ---
 
