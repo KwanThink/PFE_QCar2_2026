@@ -86,14 +86,6 @@ colcon build
 source install/setup.bash
 ```
 
-To build only the QCar2 packages:
-
-```bash
-cd ~/ros2
-colcon build --packages-select qcar2_interfaces qcar2_nodes
-source install/setup.bash
-```
-
 ---
 
 ## Representative Launch Files
