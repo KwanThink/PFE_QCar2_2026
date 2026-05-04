@@ -255,9 +255,3 @@ ros2/src/qcar2_nodes/src/nav2_qcar_command_convert.cpp
 ```
 
 It converts Nav2 velocity commands into QCar2-specific motor commands for throttle and steering.
-
----
-
-## Author
-
-Developed as part of the PFE QCar2 autonomous navigation project.
