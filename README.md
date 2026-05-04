@@ -2,18 +2,31 @@
 
 ## Overview
 
-This repository contains a ROS 2 workspace for the **Quanser QCar2 physical platform**, developed and tested on an **NVIDIA Jetson Orin**.
+This repository contains a ROS 2 workspace for the **Quanser QCar2 physical platform**, developed and tested on an **NVIDIA Jetson Orin** onboard computer. The project goal is: **Control Implementation for a Safe and Secure Self-driving Car**.
 
-The current implemented milestone focuses on:
+---
 
-- QCar2 hardware and sensor integration
-- Odometry and TF setup
-- LiDAR-based SLAM using Cartographer
-- Navigation bringup using Nav2
-- Bezier-based trajectory generation
-- Trajectory visualization in RViz
+## Current Completed Milestone
 
-The project is structured as a ROS 2 workspace with custom nodes, launch files, configuration files, and interfaces for the QCar2 platform.
+The current GitHub version focuses on the completed system exploration, SLAM/Nav2 bringup, and trajectory generation milestones.
+
+Implemented:
+
+- Explored the Quanser QCar2 platform, tested the onboard camera and LiDAR, collected sensor data, and visualized them through a remote development setup using SSH.
+- Applied SLAM and Nav2 to scan the environment, generate a map, and navigate inside the mapped area using a PID-based control approach.
+- Used the QCar2 kinematic model to generate trajectories that better match the vehicle motion constraints instead of relying only on the default Nav2-generated trajectory, and visualized the generated trajectories in RViz.
+
+---
+
+## Work in Progress
+
+The following components are under active development:
+
+- NLMPC trajectory tracking
+- ACADO/acados solver integration
+- Closed-loop optimal control for trajectory following
+
+These parts are intentionally marked as work in progress and are not the main focus of the current portfolio milestone.
 
 ---
 
@@ -43,36 +56,6 @@ ROS 2 Humble
 NVIDIA Jetson Orin
 Quanser QCar2 physical platform
 ```
-
----
-
-## ROS 2 Packages
-
-### `qcar2_interfaces`
-
-This package defines custom ROS 2 messages used by the QCar2 system.
-
-Main custom messages:
-
-- `MotorCommands.msg`
-- `BooleanLeds.msg`
-
-These messages are used to send QCar2-specific motor and LED commands.
-
-### `qcar2_nodes`
-
-This package contains the main QCar2 ROS 2 nodes, launch files, and configuration files.
-
-Main components include:
-
-- QCar2 hardware interface
-- QCar2 odometry node
-- LiDAR node
-- Fixed TF between QCar2 and LiDAR
-- Cartographer SLAM launch
-- Nav2 navigation bringup
-- Nav2-to-QCar2 command converter
-- Bezier trajectory generator and visualizer
 
 ---
 
@@ -275,46 +258,6 @@ It converts Nav2 velocity commands into QCar2-specific motor commands for thrott
 
 ---
 
-## Current Completed Milestone
+## Author
 
-The current GitHub version focuses on the completed system exploration, SLAM/Nav2 bringup, and trajectory generation milestones.
-
-Implemented:
-
-- Explored the Quanser QCar2 platform, tested the onboard camera and LiDAR, collected sensor data, and visualized them through the remote development setup using SSH.
-- Applied SLAM and Nav2 to scan the environment, generate a map, and navigate inside the mapped area using a PID-based control approach.
-- Used the QCar2 kinematic model to generate trajectories that better match the vehicle motion constraints instead of relying only on the default Nav2-generated trajectory, and visualized the generated trajectories in RViz.
----
-
-## Work in Progress
-
-The following components are under active development:
-
-- NLMPC trajectory tracking
-- ACADO/acados solver integration
-- Closed-loop optimal control for trajectory following
-
-These parts are intentionally marked as work in progress and are not the main focus of the current portfolio milestone.
-
----
-
-## Project Goal
-
-The goal of this project is to develop a ROS 2-based autonomous navigation pipeline for the Quanser QCar2 platform.
-
-The project starts from:
-
-- Hardware integration
-- Sensor integration
-- Odometry
-- SLAM
-- Navigation bringup
-
-It then progresses toward:
-
-- Trajectory generation
-- Bezier trajectory visualization
-- Closed-loop trajectory tracking
-- NLMPC-based optimal control
-
-The current milestone demonstrates the system foundation and trajectory generation pipeline, while the next stage focuses on NLMPC-based trajectory tracking using ACADO/acados.
+Developed as part of the PFE QCar2 autonomous navigation project.
