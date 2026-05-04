@@ -15,6 +15,7 @@ Implemented:
 - Explored the Quanser QCar2 platform, tested the onboard camera and LiDAR, collected sensor data, and visualized them through a remote development setup using SSH.
 - Applied SLAM and Nav2 to scan the environment, generate a map, and navigate inside the mapped area using a PID-based control approach.
 - Used the QCar2 kinematic model to generate trajectories that better match the vehicle motion constraints instead of relying only on the default Nav2-generated trajectory, and visualized the generated trajectories in RViz.
+- The scanned map used for localization and navigation can be found in the `Maps/` directory.
 
 ---
 
