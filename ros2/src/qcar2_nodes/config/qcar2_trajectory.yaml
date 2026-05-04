@@ -1,0 +1,38 @@
+qcar2_bezier:
+  ros__parameters:
+    frame_id: "map"
+    publish_period: 1.0
+    heading_stride: 25
+    heading_scale: 0.18
+    show_control_polygon: true
+    show_waypoints: true
+
+    # QCar2 / trajectory limits.
+    L: 0.25725
+    DT: 0.02
+    VARPHI_MAX: 0.5236
+    OMEGA_S_MAX: 2.0
+
+    # Used as fallback when a segment speed is zero.
+    default_segment_time: 8.0
+
+    # "xyv"  : waypoints = [x, y, v, ...]. The node computes theta, varphi, omega_s.
+    # "full" : waypoints = [x, y, theta, varphi, v, omega_s, ...].
+    waypoint_format: "xyv"
+
+    # In xyv mode, each waypoint is [x, y, v].
+    # Coordinates x,y are in the map frame. Do not flip x if the points come from RViz/map.
+    waypoints: [
+       0.0,  0.0, 0.35,
+      -1.5,  0.2, 0.35,
+      -3.0,  1.0, 0.35
+    ]
+
+    # Auto-computation options for waypoint_format="xyv".
+    zero_endpoint_steering: true
+    min_segment_time: 1.0
+    time_safety_factor: 1.25
+
+    # Optional. Leave this omitted for automatic segment timing.
+    # If provided manually, it must contain number_of_waypoints - 1 values.
+    # Example: segment_times: [5.4, 6.1]
