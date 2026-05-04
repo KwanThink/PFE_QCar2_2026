@@ -81,19 +81,8 @@ This section summarizes the main launch files used in the current project milest
 ros2 launch qcar2_nodes qcar2_slam_and_nav_bringup_launch.py
 ```
 
-This is the main launch file for the QCar2 SLAM and navigation pipeline.
-
-It starts the complete bringup needed for autonomous navigation, including:
-
-- QCar2 base bringup
-- Cartographer SLAM
-- Occupancy grid generation
-- Nav2 navigation stack
-- Nav2-to-QCar2 command converter
-
-Internally, this launch file includes the Cartographer launch file, so Cartographer does not need to be launched separately.
-
-This launch file is used when the QCar2 needs to perform SLAM/navigation with the physical robot setup.
+Main launch file for running the QCar2 SLAM and navigation pipeline.  
+It brings up the QCar2 platform, Cartographer SLAM, Nav2 navigation, and the Nav2-to-QCar2 command converter.
 
 ### 2. Cartographer SLAM Launch
 
@@ -101,22 +90,8 @@ This launch file is used when the QCar2 needs to perform SLAM/navigation with th
 ros2 launch qcar2_nodes qcar2_cartographer_launch.py
 ```
 
-This launch file starts the SLAM-related components using Cartographer.
-
-It includes:
-
-- QCar2 base launch
-- LiDAR frame TF setup
-- Cartographer SLAM node
-- Cartographer occupancy grid node
-
-In normal usage, this file is already included by:
-
-```bash
-ros2 launch qcar2_nodes qcar2_slam_and_nav_bringup_launch.py
-```
-
-Therefore, it is mainly useful for testing or debugging the SLAM part independently.
+Launch file for running the Cartographer SLAM pipeline independently.  
+It is mainly used for mapping, occupancy grid generation, and SLAM debugging.
 
 ### 3. Bezier Trajectory Visualization
 
@@ -124,35 +99,8 @@ Therefore, it is mainly useful for testing or debugging the SLAM part independen
 ros2 launch qcar2_nodes qcar2_bezier_launch.py
 ```
 
-This launch file is used for the current trajectory generation milestone.
-
-It starts:
-
-- Nav2 map server
-- Nav2 lifecycle manager
-- QCar2 Bezier trajectory node
-
-The Bezier node loads trajectory parameters from:
-
-```bash
-qcar2_nodes/config/qcar2_trajectory.yaml
-```
-
-The default map path is configured for the physical QCar2/Jetson environment:
-
-```bash
-/home/nvidia/Maps/d215_map.yaml
-```
-
-This map is stored in the QCar2 runtime environment.
-
-To use another map, override the launch argument:
-
-```bash
-ros2 launch qcar2_nodes qcar2_bezier_launch.py map_yaml:=/absolute/path/to/map.yaml
-```
-
-This launch file is used to visualize the planned Bezier trajectory in RViz before closed-loop trajectory tracking is enabled.
+Launch file for generating and visualizing the QCar2 Bezier trajectory in RViz.  
+It uses the trajectory configuration from `qcar2_nodes/config/qcar2_trajectory.yaml` and the map stored in the QCar2 runtime environment.
 
 ### 4. Full Localization and Navigation Launch
 
@@ -160,23 +108,8 @@ This launch file is used to visualize the planned Bezier trajectory in RViz befo
 ros2 launch qcar2_nodes qcar2_localize_and_nav_launch.py
 ```
 
-This launch file brings up the localization and navigation pipeline using an existing map.
-
-It includes:
-
-- QCar2 hardware node
-- QCar2 odometry node
-- LiDAR node
-- Fixed LiDAR TF node
-- Nav2 map server
-- AMCL localization
-- Nav2 navigation stack
-- Nav2-to-QCar2 command converter
-- Optional RViz visualization
-
-This launch file is useful when a map already exists and the robot should localize itself and navigate within that known environment.
-
----
+Launch file for localization and navigation using an existing map.  
+It starts the QCar2 hardware, odometry, LiDAR, AMCL localization, Nav2 navigation, and optional RViz visualization.
 
 ## Main Demo Commands
 
