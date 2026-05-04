@@ -58,19 +58,6 @@ Quanser QCar2 physical platform
 ```
 
 ---
-
-## Build Instructions
-
-From the ROS 2 workspace directory:
-
-```bash
-cd ~/ros2
-colcon build
-source install/setup.bash
-```
-
----
-
 ## Representative Launch Files
 
 This section summarizes the main launch files used in the current project milestone.
