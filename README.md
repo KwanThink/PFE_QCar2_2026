@@ -1,4 +1,4 @@
-# QCar2 ROS 2 Autonomous Navigation Workspace
+# QCar2 ROS 2 Autonomous Navigation
 
 ## Overview
 
