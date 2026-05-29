@@ -1,0 +1,14 @@
+{
+    "ROS2.distro": "jazzy",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/jazzy/lib/python3.12/site-packages",
+        "/home/khanh/QCar2_NLMPC",
+        "/home/khanh/deps/acados/interfaces/acados_template"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/jazzy/lib/python3.12/site-packages",
+        "/home/khanh/QCar2_NLMPC",
+        "/home/khanh/deps/acados/interfaces/acados_template"
+    ],
+    "python.defaultInterpreterPath": "/home/khanh/deps/acados_venv/bin/python"
+}

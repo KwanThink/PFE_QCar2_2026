@@ -1,0 +1,10 @@
+make[2]: Warning: File '/home/nvidia/ros2_qcar2_nlmpc/src/qcar2_nodes/src/qcar2_hardware.cpp' has modification time 31357605 s in the future
+make[2]: Warning: File '/home/nvidia/ros2_qcar2_nlmpc/src/qcar2_nodes/src/qcar2_odometry.cpp' has modification time 27130766 s in the future
+make[2]: Warning: File '/home/nvidia/ros2_qcar2_nlmpc/src/qcar2_nodes/src/qcar2_nlmpc_controller.cpp' has modification time 31529726 s in the future
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.5
+/usr/bin/ld: warning: libopencv_core.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.5
+/usr/bin/ld: warning: libopencv_core.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.

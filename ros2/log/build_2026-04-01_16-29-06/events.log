@@ -1,0 +1,694 @@
+[0.000000] (-) TimerEvent: {}
+[0.000534] (qcar2_interfaces) JobQueued: {'identifier': 'qcar2_interfaces', 'dependencies': OrderedDict()}
+[0.000699] (qcar2_nodes) JobQueued: {'identifier': 'qcar2_nodes', 'dependencies': OrderedDict([('qcar2_interfaces', '/home/nvidia/ros2/install/qcar2_interfaces')])}
+[0.001040] (qcar2_interfaces) JobStarted: {'identifier': 'qcar2_interfaces'}
+[0.016098] (qcar2_interfaces) JobProgress: {'identifier': 'qcar2_interfaces', 'progress': 'cmake'}
+[0.017300] (qcar2_interfaces) JobProgress: {'identifier': 'qcar2_interfaces', 'progress': 'build'}
+[0.018172] (qcar2_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/ros2/build/qcar2_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/nvidia/ros2/build/qcar2_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('QAL_DIR', '/home/nvidia/Documents/Quanser'), ('SSH_AGENT_PID', '2615'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4186'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JOURNAL_STREAM', '8:61772'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/home/nvidia/.local/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/qcar-61319:@/tmp/.ICE-unix/2650,unix/qcar-61319:/tmp/.ICE-unix/2650'), ('INVOCATION_ID', '94ba01acca1c4a3594f35ec8aaa652cf'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '40'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:08d7e769-0f89-48ac-ae40-16518ceb1fdf'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nvidia/ros2/build/qcar2_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.8/site-packages::/usr/local/lib/python3.8/dist-packages/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.064131] (qcar2_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099431] (-) TimerEvent: {}
+[0.200095] (-) TimerEvent: {}
+[0.300772] (-) TimerEvent: {}
+[0.375932] (qcar2_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.393068] (qcar2_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.395552] (qcar2_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.400827] (-) TimerEvent: {}
+[0.403504] (qcar2_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.455365] (qcar2_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500943] (-) TimerEvent: {}
+[0.601443] (-) TimerEvent: {}
+[0.702254] (-) TimerEvent: {}
+[0.803293] (-) TimerEvent: {}
+[0.904074] (-) TimerEvent: {}
+[1.004757] (-) TimerEvent: {}
+[1.105591] (-) TimerEvent: {}
+[1.136506] (qcar2_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.205790] (-) TimerEvent: {}
+[1.306534] (-) TimerEvent: {}
+[1.407090] (-) TimerEvent: {}
+[1.507722] (-) TimerEvent: {}
+[1.608395] (-) TimerEvent: {}
+[1.707189] (qcar2_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.708472] (-) TimerEvent: {}
+[1.809126] (-) TimerEvent: {}
+[1.909958] (-) TimerEvent: {}
+[2.010754] (-) TimerEvent: {}
+[2.111415] (-) TimerEvent: {}
+[2.212221] (-) TimerEvent: {}
+[2.312848] (-) TimerEvent: {}
+[2.413497] (-) TimerEvent: {}
+[2.476435] (qcar2_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.513844] (-) TimerEvent: {}
+[2.516587] (qcar2_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.559995] (qcar2_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.560681] (qcar2_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[2.561033] (qcar2_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[2.614198] (-) TimerEvent: {}
+[2.714736] (-) TimerEvent: {}
+[2.725086] (qcar2_interfaces) StdoutLine: {'line': b'-- Using numpy include directory: /usr/local/lib/python3.8/dist-packages/numpy/core/include\n'}
+[2.744870] (qcar2_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.769137] (qcar2_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.770317] (qcar2_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.778468] (qcar2_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.814797] (-) TimerEvent: {}
+[2.818101] (qcar2_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[2.823048] (qcar2_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/ros2/build/qcar2_interfaces\n'}
+[2.866505] (qcar2_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.882993] (qcar2_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.899301] (qcar2_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_qcar2_interfaces\n'}
+[2.914997] (-) TimerEvent: {}
+[3.015622] (-) TimerEvent: {}
+[3.116213] (-) TimerEvent: {}
+[3.216733] (-) TimerEvent: {}
+[3.317468] (-) TimerEvent: {}
+[3.392493] (qcar2_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[3.417650] (-) TimerEvent: {}
+[3.426774] (qcar2_interfaces) StdoutLine: {'line': b'writing qcar2_interfaces.egg-info/PKG-INFO\n'}
+[3.427715] (qcar2_interfaces) StdoutLine: {'line': b'writing dependency_links to qcar2_interfaces.egg-info/dependency_links.txt\n'}
+[3.427950] (qcar2_interfaces) StdoutLine: {'line': b'[  5%] Built target qcar2_interfaces__cpp\n'}
+[3.428255] (qcar2_interfaces) StdoutLine: {'line': b'writing top-level names to qcar2_interfaces.egg-info/top_level.txt\n'}
+[3.444016] (qcar2_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.444585] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_generator_c\x1b[0m\n'}
+[3.444746] (qcar2_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.445774] (qcar2_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.465012] (qcar2_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/qcar2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/qcar2_interfaces/msg/detail/boolean_leds__functions.c.o\x1b[0m\n'}
+[3.465528] (qcar2_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/qcar2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/qcar2_interfaces/msg/detail/motor_commands__functions.c.o\x1b[0m\n'}
+[3.517811] (-) TimerEvent: {}
+[3.546577] (qcar2_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libqcar2_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[3.602623] (qcar2_interfaces) StdoutLine: {'line': b'[ 20%] Built target qcar2_interfaces__rosidl_generator_c\n'}
+[3.618002] (-) TimerEvent: {}
+[3.620094] (qcar2_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.620564] (qcar2_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.621264] (qcar2_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.718197] (-) TimerEvent: {}
+[3.750550] (qcar2_interfaces) StdoutLine: {'line': b"reading manifest file 'qcar2_interfaces.egg-info/SOURCES.txt'\n"}
+[3.752393] (qcar2_interfaces) StdoutLine: {'line': b"writing manifest file 'qcar2_interfaces.egg-info/SOURCES.txt'\n"}
+[3.818369] (-) TimerEvent: {}
+[3.833506] (qcar2_interfaces) StdoutLine: {'line': b'[ 28%] Built target ament_cmake_python_build_qcar2_interfaces_egg\n'}
+[3.918561] (-) TimerEvent: {}
+[3.955902] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.976194] (qcar2_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qcar2_interfaces/msg/motor_commands__type_support.cpp.o\x1b[0m\n'}
+[3.982461] (qcar2_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qcar2_interfaces/msg/boolean_leds__type_support.cpp.o\x1b[0m\n'}
+[3.983197] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[4.006530] (qcar2_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qcar2_interfaces/msg/detail/motor_commands__type_support.cpp.o\x1b[0m\n'}
+[4.013653] (qcar2_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qcar2_interfaces/msg/detail/boolean_leds__type_support.cpp.o\x1b[0m\n'}
+[4.018727] (-) TimerEvent: {}
+[4.031568] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.056466] (qcar2_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qcar2_interfaces/msg/detail/dds_fastrtps/motor_commands__type_support.cpp.o\x1b[0m\n'}
+[4.118972] (-) TimerEvent: {}
+[4.142943] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[4.169521] (qcar2_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/qcar2_interfaces/msg/motor_commands__type_support.cpp.o\x1b[0m\n'}
+[4.219204] (-) TimerEvent: {}
+[4.226841] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.237558] (qcar2_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/qcar2_interfaces/msg/boolean_leds__type_support.cpp.o\x1b[0m\n'}
+[4.242603] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.252653] (qcar2_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/qcar2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qcar2_interfaces/msg/detail/motor_commands__type_support.c.o\x1b[0m\n'}
+[4.270552] (qcar2_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qcar2_interfaces/msg/detail/motor_commands__type_support_c.cpp.o\x1b[0m\n'}
+[4.292636] (qcar2_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libqcar2_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.319415] (-) TimerEvent: {}
+[4.352278] (qcar2_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/qcar2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qcar2_interfaces/msg/detail/boolean_leds__type_support.c.o\x1b[0m\n'}
+[4.363065] (qcar2_interfaces) StdoutLine: {'line': b'[ 56%] Built target qcar2_interfaces__rosidl_typesupport_c\n'}
+[4.381625] (qcar2_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qcar2_interfaces/msg/detail/dds_fastrtps/boolean_leds__type_support.cpp.o\x1b[0m\n'}
+[4.419661] (-) TimerEvent: {}
+[4.421862] (qcar2_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libqcar2_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.475369] (qcar2_interfaces) StdoutLine: {'line': b'[ 61%] Built target qcar2_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.477961] (qcar2_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qcar2_interfaces/msg/detail/boolean_leds__type_support_c.cpp.o\x1b[0m\n'}
+[4.484778] (qcar2_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libqcar2_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.519843] (-) TimerEvent: {}
+[4.551285] (qcar2_interfaces) StdoutLine: {'line': b'[ 66%] Built target qcar2_interfaces__rosidl_typesupport_cpp\n'}
+[4.620024] (-) TimerEvent: {}
+[4.720718] (-) TimerEvent: {}
+[4.821458] (-) TimerEvent: {}
+[4.922157] (-) TimerEvent: {}
+[4.937064] (qcar2_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libqcar2_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.022325] (-) TimerEvent: {}
+[5.059442] (qcar2_interfaces) StdoutLine: {'line': b'[ 69%] Built target qcar2_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[5.099425] (qcar2_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libqcar2_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.122446] (-) TimerEvent: {}
+[5.190772] (qcar2_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libqcar2_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.204124] (qcar2_interfaces) StdoutLine: {'line': b'[ 74%] Built target qcar2_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[5.222583] (-) TimerEvent: {}
+[5.300289] (qcar2_interfaces) StdoutLine: {'line': b'[ 74%] Built target qcar2_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[5.322708] (-) TimerEvent: {}
+[5.334888] (qcar2_interfaces) StdoutLine: {'line': b'[ 74%] Built target qcar2_interfaces\n'}
+[5.367689] (qcar2_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.422878] (-) TimerEvent: {}
+[5.523515] (-) TimerEvent: {}
+[5.624194] (-) TimerEvent: {}
+[5.724843] (-) TimerEvent: {}
+[5.825381] (-) TimerEvent: {}
+[5.925962] (-) TimerEvent: {}
+[6.026595] (-) TimerEvent: {}
+[6.036467] (qcar2_interfaces) StdoutLine: {'line': b'[ 76%] Built target qcar2_interfaces__py\n'}
+[6.058405] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_generator_py\x1b[0m\n'}
+[6.088984] (qcar2_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/qcar2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/qcar2_interfaces/msg/_boolean_leds_s.c.o\x1b[0m\n'}
+[6.089413] (qcar2_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/qcar2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/qcar2_interfaces/msg/_motor_commands_s.c.o\x1b[0m\n'}
+[6.126704] (-) TimerEvent: {}
+[6.227347] (-) TimerEvent: {}
+[6.248197] (qcar2_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/qcar2_interfaces/libqcar2_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[6.308477] (qcar2_interfaces) StdoutLine: {'line': b'[ 84%] Built target qcar2_interfaces__rosidl_generator_py\n'}
+[6.325888] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[6.326295] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[6.326418] (qcar2_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[6.327377] (-) TimerEvent: {}
+[6.354302] (qcar2_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/qcar2_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/qcar2_interfaces/_qcar2_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.354750] (qcar2_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/qcar2_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/qcar2_interfaces/_qcar2_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.354934] (qcar2_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/qcar2_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/qcar2_interfaces/_qcar2_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.427580] (-) TimerEvent: {}
+[6.481334] (qcar2_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/qcar2_interfaces/qcar2_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[6.481798] (qcar2_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/qcar2_interfaces/qcar2_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[6.487335] (qcar2_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/qcar2_interfaces/qcar2_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[6.527764] (-) TimerEvent: {}
+[6.530237] (qcar2_interfaces) StdoutLine: {'line': b'[100%] Built target qcar2_interfaces__rosidl_typesupport_c__pyext\n'}
+[6.530619] (qcar2_interfaces) StdoutLine: {'line': b'[100%] Built target qcar2_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[6.542111] (qcar2_interfaces) StdoutLine: {'line': b'[100%] Built target qcar2_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.563499] (qcar2_interfaces) CommandEnded: {'returncode': 0}
+[6.628159] (-) TimerEvent: {}
+[6.645196] (qcar2_interfaces) JobProgress: {'identifier': 'qcar2_interfaces', 'progress': 'install'}
+[6.665650] (qcar2_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/ros2/build/qcar2_interfaces'], 'cwd': '/home/nvidia/ros2/build/qcar2_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('QAL_DIR', '/home/nvidia/Documents/Quanser'), ('SSH_AGENT_PID', '2615'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4186'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JOURNAL_STREAM', '8:61772'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/home/nvidia/.local/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/qcar-61319:@/tmp/.ICE-unix/2650,unix/qcar-61319:/tmp/.ICE-unix/2650'), ('INVOCATION_ID', '94ba01acca1c4a3594f35ec8aaa652cf'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '40'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:08d7e769-0f89-48ac-ae40-16518ceb1fdf'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nvidia/ros2/build/qcar2_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.8/site-packages::/usr/local/lib/python3.8/dist-packages/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.686360] (qcar2_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.686908] (qcar2_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.687389] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/ament_index/resource_index/rosidl_interfaces/qcar2_interfaces\n'}
+[6.688174] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/boolean_leds.h\n'}
+[6.688427] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/boolean_leds__functions.h\n'}
+[6.688662] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/boolean_leds__struct.h\n'}
+[6.688894] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/boolean_leds__type_support.h\n'}
+[6.689144] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/motor_commands__functions.h\n'}
+[6.689371] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/motor_commands__struct.h\n'}
+[6.689597] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/motor_commands__type_support.h\n'}
+[6.689817] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/motor_commands.h\n'}
+[6.690038] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.690401] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/environment/library_path.sh\n'}
+[6.690726] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/environment/library_path.dsv\n'}
+[6.691503] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/boolean_leds__rosidl_typesupport_fastrtps_c.h\n'}
+[6.691739] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/motor_commands__rosidl_typesupport_fastrtps_c.h\n'}
+[6.691975] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.692606] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/boolean_leds__rosidl_typesupport_introspection_c.h\n'}
+[6.692840] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/motor_commands__rosidl_typesupport_introspection_c.h\n'}
+[6.693082] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.693769] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/boolean_leds.hpp\n'}
+[6.694001] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/boolean_leds__builder.hpp\n'}
+[6.694228] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/boolean_leds__struct.hpp\n'}
+[6.694458] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/boolean_leds__traits.hpp\n'}
+[6.694682] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/motor_commands__builder.hpp\n'}
+[6.694906] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/motor_commands__struct.hpp\n'}
+[6.695132] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/motor_commands__traits.hpp\n'}
+[6.695350] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/motor_commands.hpp\n'}
+[6.696132] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/boolean_leds__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.696363] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/motor_commands__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.696590] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.697230] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/boolean_leds__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.697461] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/include/qcar2_interfaces/qcar2_interfaces/msg/detail/motor_commands__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.697792] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/environment/pythonpath.sh\n'}
+[6.698126] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/environment/pythonpath.dsv\n'}
+[6.698720] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces-0.0.0-py3.9.egg-info/PKG-INFO\n'}
+[6.698939] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces-0.0.0-py3.9.egg-info/SOURCES.txt\n'}
+[6.699166] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces-0.0.0-py3.9.egg-info/dependency_links.txt\n'}
+[6.699389] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces-0.0.0-py3.9.egg-info/top_level.txt\n'}
+[6.700313] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/__init__.py\n'}
+[6.700538] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/_qcar2_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[6.700758] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/_qcar2_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.700992] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/_qcar2_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.701213] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/libqcar2_interfaces__rosidl_generator_py.so\n'}
+[6.701442] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/msg/__init__.py\n'}
+[6.701666] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/msg/_boolean_leds.py\n'}
+[6.701888] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/msg/_boolean_leds_s.c\n'}
+[6.702111] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/msg/_motor_commands.py\n'}
+[6.702331] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/msg/_motor_commands_s.c\n'}
+[6.702552] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/qcar2_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[6.702769] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/qcar2_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[6.702991] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/qcar2_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[6.703481] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/qcar2_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[6.703958] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/qcar2_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[6.704430] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/qcar2_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[6.704777] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/msg/MotorCommands.idl\n'}
+[6.705120] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/msg/BooleanLeds.idl\n'}
+[6.705436] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/msg/MotorCommands.msg\n'}
+[6.705751] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/msg/BooleanLeds.msg\n'}
+[6.706092] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/ament_index/resource_index/package_run_dependencies/qcar2_interfaces\n'}
+[6.706433] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/ament_index/resource_index/parent_prefix_path/qcar2_interfaces\n'}
+[6.706773] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/environment/ament_prefix_path.sh\n'}
+[6.707088] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/environment/ament_prefix_path.dsv\n'}
+[6.707411] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/environment/path.sh\n'}
+[6.707726] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/environment/path.dsv\n'}
+[6.708035] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/local_setup.bash\n'}
+[6.708345] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/local_setup.sh\n'}
+[6.708653] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/local_setup.zsh\n'}
+[6.708973] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/local_setup.dsv\n'}
+[6.709535] (qcar2_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/package.dsv\n'}
+[6.724380] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/ament_index/resource_index/packages/qcar2_interfaces\n'}
+[6.724862] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[6.725094] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.725288] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.725567] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.725886] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.726201] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.726519] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.726841] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/qcar2_interfacesConfig.cmake\n'}
+[6.727056] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/qcar2_interfacesConfig-version.cmake\n'}
+[6.727366] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/package.xml\n'}
+[6.727729] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_generator_c.so\n'}
+[6.728175] (-) TimerEvent: {}
+[6.728499] (qcar2_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_generator_c.so" to ""\n'}
+[6.728699] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[6.729106] (qcar2_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.729388] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[6.729857] (qcar2_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.730114] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_c.so\n'}
+[6.730541] (qcar2_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[6.730836] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.731441] (qcar2_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.731741] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[6.732373] (qcar2_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.732639] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_cpp.so\n'}
+[6.733083] (qcar2_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[6.790291] (qcar2_interfaces) StdoutLine: {'line': b"Listing '/home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces'...\n"}
+[6.790719] (qcar2_interfaces) StdoutLine: {'line': b"Compiling '/home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/__init__.py'...\n"}
+[6.790890] (qcar2_interfaces) StdoutLine: {'line': b"Listing '/home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/msg'...\n"}
+[6.791010] (qcar2_interfaces) StdoutLine: {'line': b"Compiling '/home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/msg/__init__.py'...\n"}
+[6.791111] (qcar2_interfaces) StdoutLine: {'line': b"Compiling '/home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/msg/_boolean_leds.py'...\n"}
+[6.791207] (qcar2_interfaces) StdoutLine: {'line': b"Compiling '/home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages/qcar2_interfaces/msg/_motor_commands.py'...\n"}
+[6.800855] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_generator_py.so\n'}
+[6.801361] (qcar2_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/ros2/install/qcar2_interfaces/lib/libqcar2_interfaces__rosidl_generator_py.so" to ""\n'}
+[6.801512] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/export_qcar2_interfaces__rosidl_generator_cExport.cmake\n'}
+[6.801647] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/export_qcar2_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.802030] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/export_qcar2_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.802151] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/export_qcar2_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.802530] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/qcar2_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.802648] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/qcar2_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.802996] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/qcar2_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[6.803112] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/qcar2_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.803475] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/export_qcar2_interfaces__rosidl_generator_cppExport.cmake\n'}
+[6.803743] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/export_qcar2_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.803867] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/export_qcar2_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.804234] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/qcar2_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.804346] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/qcar2_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.804701] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/qcar2_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[6.804811] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/qcar2_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.805195] (qcar2_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/export_qcar2_interfaces__rosidl_generator_pyExport.cmake\n'}
+[6.805311] (qcar2_interfaces) StdoutLine: {'line': b'-- Installing: /home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake/export_qcar2_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.809570] (qcar2_interfaces) CommandEnded: {'returncode': 0}
+[6.828370] (-) TimerEvent: {}
+[6.929089] (-) TimerEvent: {}
+[6.967947] (qcar2_interfaces) JobEnded: {'identifier': 'qcar2_interfaces', 'rc': 0}
+[6.970581] (qcar2_nodes) JobStarted: {'identifier': 'qcar2_nodes'}
+[6.989001] (qcar2_nodes) JobProgress: {'identifier': 'qcar2_nodes', 'progress': 'cmake'}
+[6.990224] (qcar2_nodes) JobProgress: {'identifier': 'qcar2_nodes', 'progress': 'build'}
+[6.990906] (qcar2_nodes) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/ros2/build/qcar2_nodes', '--', '-j8', '-l8'], 'cwd': '/home/nvidia/ros2/build/qcar2_nodes', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('QAL_DIR', '/home/nvidia/Documents/Quanser'), ('SSH_AGENT_PID', '2615'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/ros2/install/qcar2_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4186'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JOURNAL_STREAM', '8:61772'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/home/nvidia/.local/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/qcar-61319:@/tmp/.ICE-unix/2650,unix/qcar-61319:/tmp/.ICE-unix/2650'), ('INVOCATION_ID', '94ba01acca1c4a3594f35ec8aaa652cf'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '40'), ('AMENT_PREFIX_PATH', '/home/nvidia/ros2/install/qcar2_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:08d7e769-0f89-48ac-ae40-16518ceb1fdf'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nvidia/ros2/build/qcar2_nodes'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages::/usr/local/lib/python3.8/dist-packages/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nvidia/ros2/install/qcar2_interfaces:/opt/ros/humble')]), 'shell': False}
+[7.029247] (-) TimerEvent: {}
+[7.040004] (qcar2_nodes) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[7.129369] (-) TimerEvent: {}
+[7.229980] (-) TimerEvent: {}
+[7.330844] (-) TimerEvent: {}
+[7.349009] (qcar2_nodes) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[7.375957] (qcar2_nodes) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[7.430947] (-) TimerEvent: {}
+[7.431701] (qcar2_nodes) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.435515] (qcar2_nodes) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.444844] (qcar2_nodes) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.463289] (qcar2_nodes) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.488941] (qcar2_nodes) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.531026] (-) TimerEvent: {}
+[7.631435] (-) TimerEvent: {}
+[7.731882] (-) TimerEvent: {}
+[7.811905] (qcar2_nodes) StdoutLine: {'line': b'-- Found image_transport: 3.1.7 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[7.831969] (-) TimerEvent: {}
+[7.893036] (qcar2_nodes) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.894884] (qcar2_nodes) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.932103] (-) TimerEvent: {}
+[8.032748] (-) TimerEvent: {}
+[8.086156] (qcar2_nodes) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.132841] (-) TimerEvent: {}
+[8.233322] (-) TimerEvent: {}
+[8.333829] (-) TimerEvent: {}
+[8.362008] (qcar2_nodes) StdoutLine: {'line': b'-- Found control_msgs: 4.4.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[8.433931] (-) TimerEvent: {}
+[8.534361] (-) TimerEvent: {}
+[8.634771] (-) TimerEvent: {}
+[8.735148] (-) TimerEvent: {}
+[8.835498] (-) TimerEvent: {}
+[8.871355] (qcar2_nodes) StdoutLine: {'line': b'-- Found qcar2_interfaces: 0.0.0 (/home/nvidia/ros2/install/qcar2_interfaces/share/qcar2_interfaces/cmake)\n'}
+[8.897763] (qcar2_nodes) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.5 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[8.935594] (-) TimerEvent: {}
+[9.035959] (-) TimerEvent: {}
+[9.136311] (-) TimerEvent: {}
+[9.236635] (-) TimerEvent: {}
+[9.321814] (qcar2_nodes) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.336718] (-) TimerEvent: {}
+[9.437131] (-) TimerEvent: {}
+[9.479448] (qcar2_nodes) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[9.480013] (qcar2_nodes) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[9.480164] (qcar2_nodes) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.480777] (qcar2_nodes) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[9.481610] (qcar2_nodes) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.482238] (qcar2_nodes) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[9.484062] (qcar2_nodes) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.484162] (qcar2_nodes) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.484704] (qcar2_nodes) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.491208] (qcar2_nodes) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.537240] (-) TimerEvent: {}
+[9.566050] (qcar2_nodes) StdoutLine: {'line': b'-- Generating done\n'}
+[9.570040] (qcar2_nodes) StdoutLine: {'line': b'-- Build files have been written to: /home/nvidia/ros2/build/qcar2_nodes\n'}
+[9.625536] (qcar2_nodes) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target csi\x1b[0m\n'}
+[9.626052] (qcar2_nodes) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lidar\x1b[0m\n'}
+[9.626736] (qcar2_nodes) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rgbd\x1b[0m\n'}
+[9.627156] (qcar2_nodes) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target command\x1b[0m\n'}
+[9.627370] (qcar2_nodes) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fixed_lidar_frame_virtual\x1b[0m\n'}
+[9.627577] (qcar2_nodes) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fixed_lidar_frame\x1b[0m\n'}
+[9.627881] (qcar2_nodes) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target nav2_qcar2_converter\x1b[0m\n'}
+[9.628242] (qcar2_nodes) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target qcar2_hardware\x1b[0m\n'}
+[9.637414] (-) TimerEvent: {}
+[9.713714] (qcar2_nodes) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/lidar.dir/src/lidar.cpp.o\x1b[0m\n'}
+[9.721404] (qcar2_nodes) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/fixed_lidar_frame.dir/src/fixed_lidar_frame.cpp.o\x1b[0m\n'}
+[9.721932] (qcar2_nodes) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/qcar2_hardware.dir/src/qcar2_hardware.cpp.o\x1b[0m\n'}
+[9.722189] (qcar2_nodes) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/nav2_qcar2_converter.dir/src/nav2_qcar_command_convert.cpp.o\x1b[0m\n'}
+[9.727881] (qcar2_nodes) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/fixed_lidar_frame_virtual.dir/src/fixed_lidar_frame_virtual.cpp.o\x1b[0m\n'}
+[9.729638] (qcar2_nodes) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/command.dir/src/command.cpp.o\x1b[0m\n'}
+[9.730104] (qcar2_nodes) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/rgbd.dir/src/rgbd.cpp.o\x1b[0m\n'}
+[9.730240] (qcar2_nodes) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/csi.dir/src/csi.cpp.o\x1b[0m\n'}
+[9.737599] (-) TimerEvent: {}
+[9.838474] (-) TimerEvent: {}
+[9.939143] (-) TimerEvent: {}
+[10.039833] (-) TimerEvent: {}
+[10.140607] (-) TimerEvent: {}
+[10.241329] (-) TimerEvent: {}
+[10.342039] (-) TimerEvent: {}
+[10.442760] (-) TimerEvent: {}
+[10.543462] (-) TimerEvent: {}
+[10.644189] (-) TimerEvent: {}
+[10.744920] (-) TimerEvent: {}
+[10.845674] (-) TimerEvent: {}
+[10.946413] (-) TimerEvent: {}
+[11.047155] (-) TimerEvent: {}
+[11.147872] (-) TimerEvent: {}
+[11.248591] (-) TimerEvent: {}
+[11.349406] (-) TimerEvent: {}
+[11.450157] (-) TimerEvent: {}
+[11.550970] (-) TimerEvent: {}
+[11.651728] (-) TimerEvent: {}
+[11.752455] (-) TimerEvent: {}
+[11.853197] (-) TimerEvent: {}
+[11.953892] (-) TimerEvent: {}
+[12.054615] (-) TimerEvent: {}
+[12.155330] (-) TimerEvent: {}
+[12.256092] (-) TimerEvent: {}
+[12.356811] (-) TimerEvent: {}
+[12.457604] (-) TimerEvent: {}
+[12.558364] (-) TimerEvent: {}
+[12.659157] (-) TimerEvent: {}
+[12.760027] (-) TimerEvent: {}
+[12.860821] (-) TimerEvent: {}
+[12.961570] (-) TimerEvent: {}
+[13.062316] (-) TimerEvent: {}
+[13.163091] (-) TimerEvent: {}
+[13.263934] (-) TimerEvent: {}
+[13.364726] (-) TimerEvent: {}
+[13.465465] (-) TimerEvent: {}
+[13.566204] (-) TimerEvent: {}
+[13.666967] (-) TimerEvent: {}
+[13.767742] (-) TimerEvent: {}
+[13.868515] (-) TimerEvent: {}
+[13.969283] (-) TimerEvent: {}
+[14.069975] (-) TimerEvent: {}
+[14.170658] (-) TimerEvent: {}
+[14.271366] (-) TimerEvent: {}
+[14.372044] (-) TimerEvent: {}
+[14.472740] (-) TimerEvent: {}
+[14.573452] (-) TimerEvent: {}
+[14.674186] (-) TimerEvent: {}
+[14.774892] (-) TimerEvent: {}
+[14.875623] (-) TimerEvent: {}
+[14.976369] (-) TimerEvent: {}
+[15.077131] (-) TimerEvent: {}
+[15.177850] (-) TimerEvent: {}
+[15.278557] (-) TimerEvent: {}
+[15.379277] (-) TimerEvent: {}
+[15.480006] (-) TimerEvent: {}
+[15.580746] (-) TimerEvent: {}
+[15.681492] (-) TimerEvent: {}
+[15.782196] (-) TimerEvent: {}
+[15.882901] (-) TimerEvent: {}
+[15.983633] (-) TimerEvent: {}
+[16.084369] (-) TimerEvent: {}
+[16.185129] (-) TimerEvent: {}
+[16.285841] (-) TimerEvent: {}
+[16.386574] (-) TimerEvent: {}
+[16.487308] (-) TimerEvent: {}
+[16.588037] (-) TimerEvent: {}
+[16.688840] (-) TimerEvent: {}
+[16.789567] (-) TimerEvent: {}
+[16.890290] (-) TimerEvent: {}
+[16.991006] (-) TimerEvent: {}
+[17.091744] (-) TimerEvent: {}
+[17.192499] (-) TimerEvent: {}
+[17.293217] (-) TimerEvent: {}
+[17.393956] (-) TimerEvent: {}
+[17.494686] (-) TimerEvent: {}
+[17.595410] (-) TimerEvent: {}
+[17.696113] (-) TimerEvent: {}
+[17.796881] (-) TimerEvent: {}
+[17.897633] (-) TimerEvent: {}
+[17.998379] (-) TimerEvent: {}
+[18.099126] (-) TimerEvent: {}
+[18.199840] (-) TimerEvent: {}
+[18.300525] (-) TimerEvent: {}
+[18.361956] (qcar2_nodes) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX executable csi\x1b[0m\n'}
+[18.400734] (-) TimerEvent: {}
+[18.501709] (-) TimerEvent: {}
+[18.562343] (qcar2_nodes) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable fixed_lidar_frame\x1b[0m\n'}
+[18.601903] (-) TimerEvent: {}
+[18.702837] (-) TimerEvent: {}
+[18.776701] (qcar2_nodes) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable rgbd\x1b[0m\n'}
+[18.803063] (-) TimerEvent: {}
+[18.904137] (-) TimerEvent: {}
+[18.914824] (qcar2_nodes) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable lidar\x1b[0m\n'}
+[19.004359] (-) TimerEvent: {}
+[19.022869] (qcar2_nodes) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable fixed_lidar_frame_virtual\x1b[0m\n'}
+[19.045999] (qcar2_nodes) StdoutLine: {'line': b'[ 81%] Built target fixed_lidar_frame\n'}
+[19.104560] (-) TimerEvent: {}
+[19.205670] (-) TimerEvent: {}
+[19.306463] (-) TimerEvent: {}
+[19.307840] (qcar2_nodes) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.5\n'}
+[19.308339] (qcar2_nodes) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5\n'}
+[19.326999] (qcar2_nodes) StdoutLine: {'line': b'[ 81%] Built target csi\n'}
+[19.406635] (-) TimerEvent: {}
+[19.441094] (qcar2_nodes) StdoutLine: {'line': b'[ 81%] Built target lidar\n'}
+[19.487030] (qcar2_nodes) StdoutLine: {'line': b'[ 81%] Built target fixed_lidar_frame_virtual\n'}
+[19.506783] (-) TimerEvent: {}
+[19.607408] (-) TimerEvent: {}
+[19.708054] (-) TimerEvent: {}
+[19.785873] (qcar2_nodes) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.5\n'}
+[19.786345] (qcar2_nodes) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5\n'}
+[19.803503] (qcar2_nodes) StdoutLine: {'line': b'[ 81%] Built target rgbd\n'}
+[19.808156] (-) TimerEvent: {}
+[19.851211] (qcar2_nodes) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable command\x1b[0m\n'}
+[19.908333] (-) TimerEvent: {}
+[20.008931] (-) TimerEvent: {}
+[20.109715] (-) TimerEvent: {}
+[20.210575] (-) TimerEvent: {}
+[20.292617] (qcar2_nodes) StdoutLine: {'line': b'[ 87%] Built target command\n'}
+[20.310683] (-) TimerEvent: {}
+[20.411478] (-) TimerEvent: {}
+[20.512112] (-) TimerEvent: {}
+[20.612753] (-) TimerEvent: {}
+[20.713429] (-) TimerEvent: {}
+[20.814273] (-) TimerEvent: {}
+[20.915126] (-) TimerEvent: {}
+[21.015777] (-) TimerEvent: {}
+[21.116431] (-) TimerEvent: {}
+[21.217090] (-) TimerEvent: {}
+[21.317971] (-) TimerEvent: {}
+[21.418820] (-) TimerEvent: {}
+[21.519462] (-) TimerEvent: {}
+[21.620068] (-) TimerEvent: {}
+[21.720706] (-) TimerEvent: {}
+[21.821366] (-) TimerEvent: {}
+[21.921985] (-) TimerEvent: {}
+[22.022597] (-) TimerEvent: {}
+[22.123237] (-) TimerEvent: {}
+[22.223886] (-) TimerEvent: {}
+[22.324716] (-) TimerEvent: {}
+[22.425544] (-) TimerEvent: {}
+[22.526142] (-) TimerEvent: {}
+[22.626756] (-) TimerEvent: {}
+[22.727377] (-) TimerEvent: {}
+[22.827998] (-) TimerEvent: {}
+[22.928604] (-) TimerEvent: {}
+[23.029239] (-) TimerEvent: {}
+[23.129841] (-) TimerEvent: {}
+[23.230439] (-) TimerEvent: {}
+[23.331043] (-) TimerEvent: {}
+[23.431670] (-) TimerEvent: {}
+[23.532294] (-) TimerEvent: {}
+[23.632930] (-) TimerEvent: {}
+[23.733563] (-) TimerEvent: {}
+[23.834174] (-) TimerEvent: {}
+[23.934803] (-) TimerEvent: {}
+[24.035417] (-) TimerEvent: {}
+[24.136038] (-) TimerEvent: {}
+[24.236671] (-) TimerEvent: {}
+[24.337308] (-) TimerEvent: {}
+[24.437926] (-) TimerEvent: {}
+[24.538546] (-) TimerEvent: {}
+[24.639186] (-) TimerEvent: {}
+[24.739826] (-) TimerEvent: {}
+[24.840457] (-) TimerEvent: {}
+[24.941274] (-) TimerEvent: {}
+[25.042112] (-) TimerEvent: {}
+[25.142747] (-) TimerEvent: {}
+[25.243375] (-) TimerEvent: {}
+[25.344222] (-) TimerEvent: {}
+[25.445083] (-) TimerEvent: {}
+[25.545681] (-) TimerEvent: {}
+[25.646287] (-) TimerEvent: {}
+[25.747092] (-) TimerEvent: {}
+[25.847933] (-) TimerEvent: {}
+[25.948598] (-) TimerEvent: {}
+[26.049270] (-) TimerEvent: {}
+[26.149926] (-) TimerEvent: {}
+[26.250769] (-) TimerEvent: {}
+[26.351405] (-) TimerEvent: {}
+[26.452013] (-) TimerEvent: {}
+[26.552628] (-) TimerEvent: {}
+[26.653295] (-) TimerEvent: {}
+[26.673775] (qcar2_nodes) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable nav2_qcar2_converter\x1b[0m\n'}
+[26.753424] (-) TimerEvent: {}
+[26.854036] (-) TimerEvent: {}
+[26.954682] (-) TimerEvent: {}
+[27.055329] (-) TimerEvent: {}
+[27.155944] (-) TimerEvent: {}
+[27.256764] (-) TimerEvent: {}
+[27.349659] (qcar2_nodes) StdoutLine: {'line': b'[ 93%] Built target nav2_qcar2_converter\n'}
+[27.356844] (-) TimerEvent: {}
+[27.457322] (-) TimerEvent: {}
+[27.557871] (-) TimerEvent: {}
+[27.658446] (-) TimerEvent: {}
+[27.759013] (-) TimerEvent: {}
+[27.859572] (-) TimerEvent: {}
+[27.960142] (-) TimerEvent: {}
+[28.060720] (-) TimerEvent: {}
+[28.161332] (-) TimerEvent: {}
+[28.261895] (-) TimerEvent: {}
+[28.362435] (-) TimerEvent: {}
+[28.462985] (-) TimerEvent: {}
+[28.563523] (-) TimerEvent: {}
+[28.664080] (-) TimerEvent: {}
+[28.764654] (-) TimerEvent: {}
+[28.865230] (-) TimerEvent: {}
+[28.965795] (-) TimerEvent: {}
+[29.066346] (-) TimerEvent: {}
+[29.166899] (-) TimerEvent: {}
+[29.267442] (-) TimerEvent: {}
+[29.367983] (-) TimerEvent: {}
+[29.468514] (-) TimerEvent: {}
+[29.569055] (-) TimerEvent: {}
+[29.669590] (-) TimerEvent: {}
+[29.770124] (-) TimerEvent: {}
+[29.870669] (-) TimerEvent: {}
+[29.971223] (-) TimerEvent: {}
+[30.071978] (-) TimerEvent: {}
+[30.172572] (-) TimerEvent: {}
+[30.273165] (-) TimerEvent: {}
+[30.373745] (-) TimerEvent: {}
+[30.474333] (-) TimerEvent: {}
+[30.574914] (-) TimerEvent: {}
+[30.675705] (-) TimerEvent: {}
+[30.776306] (-) TimerEvent: {}
+[30.877107] (-) TimerEvent: {}
+[30.977871] (-) TimerEvent: {}
+[31.078643] (-) TimerEvent: {}
+[31.179237] (-) TimerEvent: {}
+[31.279815] (-) TimerEvent: {}
+[31.380384] (-) TimerEvent: {}
+[31.481124] (-) TimerEvent: {}
+[31.581862] (-) TimerEvent: {}
+[31.682635] (-) TimerEvent: {}
+[31.783426] (-) TimerEvent: {}
+[31.884248] (-) TimerEvent: {}
+[31.985068] (-) TimerEvent: {}
+[32.085705] (-) TimerEvent: {}
+[32.186631] (-) TimerEvent: {}
+[32.287354] (-) TimerEvent: {}
+[32.388105] (-) TimerEvent: {}
+[32.488928] (-) TimerEvent: {}
+[32.589706] (-) TimerEvent: {}
+[32.690278] (-) TimerEvent: {}
+[32.791135] (-) TimerEvent: {}
+[32.891842] (-) TimerEvent: {}
+[32.992533] (-) TimerEvent: {}
+[33.093223] (-) TimerEvent: {}
+[33.193916] (-) TimerEvent: {}
+[33.294613] (-) TimerEvent: {}
+[33.395334] (-) TimerEvent: {}
+[33.495876] (-) TimerEvent: {}
+[33.596613] (-) TimerEvent: {}
+[33.697385] (-) TimerEvent: {}
+[33.771993] (qcar2_nodes) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable qcar2_hardware\x1b[0m\n'}
+[33.797516] (-) TimerEvent: {}
+[33.898090] (-) TimerEvent: {}
+[33.998736] (-) TimerEvent: {}
+[34.099416] (-) TimerEvent: {}
+[34.200076] (-) TimerEvent: {}
+[34.300738] (-) TimerEvent: {}
+[34.401467] (-) TimerEvent: {}
+[34.502116] (-) TimerEvent: {}
+[34.602722] (-) TimerEvent: {}
+[34.703329] (-) TimerEvent: {}
+[34.803950] (-) TimerEvent: {}
+[34.904572] (-) TimerEvent: {}
+[35.005251] (-) TimerEvent: {}
+[35.075861] (qcar2_nodes) StdoutLine: {'line': b'[100%] Built target qcar2_hardware\n'}
+[35.096944] (qcar2_nodes) CommandEnded: {'returncode': 0}
+[35.105514] (-) TimerEvent: {}
+[35.154189] (qcar2_nodes) JobProgress: {'identifier': 'qcar2_nodes', 'progress': 'install'}
+[35.155191] (qcar2_nodes) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/ros2/build/qcar2_nodes'], 'cwd': '/home/nvidia/ros2/build/qcar2_nodes', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nvidia'), ('QAL_DIR', '/home/nvidia/Documents/Quanser'), ('SSH_AGENT_PID', '2615'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/ros2/install/qcar2_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64'), ('HOME', '/home/nvidia'), ('OLDPWD', '/home/nvidia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4186'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JOURNAL_STREAM', '8:61772'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nvidia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/home/nvidia/.local/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/qcar-61319:@/tmp/.ICE-unix/2650,unix/qcar-61319:/tmp/.ICE-unix/2650'), ('INVOCATION_ID', '94ba01acca1c4a3594f35ec8aaa652cf'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '40'), ('AMENT_PREFIX_PATH', '/home/nvidia/ros2/install/qcar2_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:08d7e769-0f89-48ac-ae40-16518ceb1fdf'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nvidia/ros2/build/qcar2_nodes'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nvidia/ros2/install/qcar2_interfaces/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages::/usr/local/lib/python3.8/dist-packages/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/nvidia/ros2/install/qcar2_interfaces:/opt/ros/humble')]), 'shell': False}
+[35.174698] (qcar2_nodes) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[35.175295] (qcar2_nodes) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[35.175955] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/lib/qcar2_nodes/qcar2_hardware\n'}
+[35.189826] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/lib/qcar2_nodes/rgbd\n'}
+[35.203478] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/lib/qcar2_nodes/lidar\n'}
+[35.205526] (-) TimerEvent: {}
+[35.218409] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/lib/qcar2_nodes/csi\n'}
+[35.232284] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/lib/qcar2_nodes/command\n'}
+[35.246129] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/lib/qcar2_nodes/nav2_qcar2_converter\n'}
+[35.262315] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/lib/qcar2_nodes/fixed_lidar_frame\n'}
+[35.276408] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/lib/qcar2_nodes/fixed_lidar_frame_virtual\n'}
+[35.291185] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/__pycache__/qcar2_cartographer_launch.cpython-312.pyc\n'}
+[35.305736] (-) TimerEvent: {}
+[35.306422] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/__pycache__/qcar2_cartographer_launch.cpython-38.pyc\n'}
+[35.319721] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/__pycache__/qcar2_launch.cpython-38.pyc\n'}
+[35.332397] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/qcar2_cartographer_launch.py\n'}
+[35.347035] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/qcar2_cartographer_virtual_launch.py\n'}
+[35.361137] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/qcar2_launch.py\n'}
+[35.376684] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/qcar2_manual_cartographer_launch.py\n'}
+[35.392681] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/qcar2_manual_drive_launch.py\n'}
+[35.405812] (-) TimerEvent: {}
+[35.408354] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/qcar2_slam_and_nav_bringup_launch.py\n'}
+[35.422241] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/qcar2_slam_and_nav_bringup_virtual_launch.py\n'}
+[35.436650] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//launch/qcar2_virtual_launch.py\n'}
+[35.458628] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//rt_models/dummy_model\n'}
+[35.474330] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//config/qcar2_2d.lua\n'}
+[35.488975] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//config/qcar2_slam_and_nav.yaml\n'}
+[35.504382] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes//config/qcar2_slam_and_nav_virtual.yaml\n'}
+[35.505915] (-) TimerEvent: {}
+[35.521292] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/ament_index/resource_index/package_run_dependencies/qcar2_nodes\n'}
+[35.536674] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/ament_index/resource_index/parent_prefix_path/qcar2_nodes\n'}
+[35.552223] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/environment/ament_prefix_path.sh\n'}
+[35.573562] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/environment/ament_prefix_path.dsv\n'}
+[35.588277] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/environment/path.sh\n'}
+[35.604790] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/environment/path.dsv\n'}
+[35.606017] (-) TimerEvent: {}
+[35.621056] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/local_setup.bash\n'}
+[35.636184] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/local_setup.sh\n'}
+[35.650097] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/local_setup.zsh\n'}
+[35.665571] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/local_setup.dsv\n'}
+[35.681032] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/package.dsv\n'}
+[35.697101] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/ament_index/resource_index/packages/qcar2_nodes\n'}
+[35.706123] (-) TimerEvent: {}
+[35.713343] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/cmake/qcar2_nodesConfig.cmake\n'}
+[35.728621] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/cmake/qcar2_nodesConfig-version.cmake\n'}
+[35.745979] (qcar2_nodes) StdoutLine: {'line': b'-- Symlinking: /home/nvidia/ros2/install/qcar2_nodes/share/qcar2_nodes/package.xml\n'}
+[35.766708] (qcar2_nodes) CommandEnded: {'returncode': 0}
+[35.806267] (-) TimerEvent: {}
+[35.863821] (qcar2_nodes) JobEnded: {'identifier': 'qcar2_nodes', 'rc': 0}
+[35.865947] (-) EventReactorShutdown: {}

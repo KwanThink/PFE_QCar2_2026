@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nvidia/ros2/build/qcar2_interfaces/rosidl_generator_py/qcar2_interfaces/qcar2_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" "TARGETS" "qcar2_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.9/site-packages/qcar2_interfaces")

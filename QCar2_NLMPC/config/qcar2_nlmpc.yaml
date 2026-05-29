@@ -1,0 +1,56 @@
+project:
+  name: QCar2_NLMPC
+
+paths:
+  acados_source_dir: /home/khanh/deps/acados
+  acados_venv: /home/khanh/deps/acados_venv
+  reference_dir: data/reference
+  generated_ocp_dir: generated/acados_ocp
+  generated_sim_dir: generated/acados_sim
+  results_dir: results
+
+qcar2:
+  L: 0.25725
+  Ts: 0.02
+
+constraints:
+  v_min: -0.5
+  v_max: 0.5
+  omega_s_min: -2.0
+  omega_s_max: 2.0
+  phi_min: -0.5236
+  phi_max: 0.5236
+
+mpc:
+  N: 15
+  tf: 0.3
+  Q: [25.0, 25.0, 8.0, 3.0]
+  R: [1.0, 0.2]
+  Qe: [60.0, 60.0, 15.0, 6.0]
+
+acados:
+  ocp_json_file: acados_ocp_qcar2.json
+  sim_json_file: acados_sim_qcar2.json
+  qp_solver: PARTIAL_CONDENSING_HPIPM
+  hessian_approx: GAUSS_NEWTON
+  integrator_type: ERK
+  nlp_solver_type: SQP_RTI
+  sim_method_num_stages: 4
+  sim_method_num_steps: 1
+  print_level: 0
+
+trajectory:
+  csv_file: qcar2_flatness_bezier7_auto.csv
+  generate_plots: true
+  columns:
+    state: [x, y, theta, varphi]
+    input: [v, omega_s]
+
+simulation:
+  # initial_state: reference
+  # initial_input: reference
+  initial_state: [-1.5, 0.5, 0.5, 0.0]
+  initial_input: [0.05, 0.0]
+  max_steps: null
+  stop_on_solver_failure: true
+  run_name_prefix: run_kinematic_s_test

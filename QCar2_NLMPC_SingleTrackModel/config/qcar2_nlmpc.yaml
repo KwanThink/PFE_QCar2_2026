@@ -1,0 +1,56 @@
+project:
+  name: QCar2_NLMPC_SingleTrackModel
+
+paths:
+  acados_source_dir: /home/khanh/deps/acados
+  acados_venv: /home/khanh/deps/acados_venv
+  reference_dir: data/reference
+  generated_ocp_dir: generated/acados_ocp
+  generated_sim_dir: generated/acados_sim
+  results_dir: results
+
+qcar2_single_track:
+  Lwb: 0.25725
+  Ts: 0.02
+
+constraints:
+  vx_min: -1.0
+  vx_max: 1.0
+  delta_min: -0.5236
+  delta_max: 0.5236
+  ax_min: -0.2
+  ax_max: -0.2
+
+mpc:
+  N: 8
+  tf: 0.16
+  Q: [5.0, 5.0, 1.0, 0.5]
+  R: [0.4, 0.4]
+  Qe: [10.0, 10.0, 1.0, 1.0]
+
+acados:
+  ocp_json_file: acados_ocp_qcar2_single_track.json
+  sim_json_file: acados_sim_qcar2_single_track.json
+  qp_solver: PARTIAL_CONDENSING_HPIPM
+  hessian_approx: GAUSS_NEWTON
+  integrator_type: ERK
+  nlp_solver_type: SQP_RTI
+  sim_method_num_stages: 4
+  sim_method_num_steps: 1
+  print_level: 0
+
+trajectory:
+  csv_file: qcar2_single_track_flatness_bezier5_auto.csv
+  generate_plots: true
+  columns:
+    state: [X, Y, psi, vx]
+    input: [delta, ax]
+
+simulation:
+  # initial_state: reference
+  # initial_input: reference
+  initial_state: [-1.5, 0.5, 0.5, 0.05]
+  initial_input: [0.0, 0.0]
+  max_steps: null
+  stop_on_solver_failure: true
+  run_name_prefix: run_single_track_s_test

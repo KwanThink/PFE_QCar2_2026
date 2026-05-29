@@ -376,17 +376,17 @@ qcar2_interfaces_uninstall/fast:
 .PHONY : qcar2_interfaces_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_qcar2_interfaces
+# Target rules for targets named ament_cmake_python_symlink_qcar2_interfaces
 
 # Build rule for target.
-ament_cmake_python_copy_qcar2_interfaces: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ament_cmake_python_copy_qcar2_interfaces
-.PHONY : ament_cmake_python_copy_qcar2_interfaces
+ament_cmake_python_symlink_qcar2_interfaces: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_qcar2_interfaces
+.PHONY : ament_cmake_python_symlink_qcar2_interfaces
 
 # fast build rule for target.
-ament_cmake_python_copy_qcar2_interfaces/fast:
-	$(MAKE) -f CMakeFiles/ament_cmake_python_copy_qcar2_interfaces.dir/build.make CMakeFiles/ament_cmake_python_copy_qcar2_interfaces.dir/build
-.PHONY : ament_cmake_python_copy_qcar2_interfaces/fast
+ament_cmake_python_symlink_qcar2_interfaces/fast:
+	$(MAKE) -f CMakeFiles/ament_cmake_python_symlink_qcar2_interfaces.dir/build.make CMakeFiles/ament_cmake_python_symlink_qcar2_interfaces.dir/build
+.PHONY : ament_cmake_python_symlink_qcar2_interfaces/fast
 
 #=============================================================================
 # Target rules for targets named qcar2_interfaces__py
@@ -943,7 +943,7 @@ help:
 	@echo "... test"
 	@echo "... uninstall"
 	@echo "... qcar2_interfaces_uninstall"
-	@echo "... ament_cmake_python_copy_qcar2_interfaces"
+	@echo "... ament_cmake_python_symlink_qcar2_interfaces"
 	@echo "... qcar2_interfaces__py"
 	@echo "... rosidl_generator_c/qcar2_interfaces/msg/detail/boolean_leds__functions.o"
 	@echo "... rosidl_generator_c/qcar2_interfaces/msg/detail/boolean_leds__functions.i"

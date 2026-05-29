@@ -1,0 +1,13 @@
+{
+    "ROS2.distro": "jazzy",
+    "python.autoComplete.extraPaths": [
+        "/run/user/1000/gvfs/sftp",
+        "host=10.42.0.107,user=nvidia/home/nvidia/ros2_qcar2_nlmpc/install/qcar2_interfaces/lib/python3.9/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/run/user/1000/gvfs/sftp",
+        "host=10.42.0.107,user=nvidia/home/nvidia/ros2_qcar2_nlmpc/install/qcar2_interfaces/lib/python3.9/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

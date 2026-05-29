@@ -350,33 +350,20 @@ private:
 
         if (desired_speed != 0)
         {
-            measured_speed = (joint_speed_measured/(720.0*4.0))*((13.0*19.0)/(70.0*37.0))*(2.0*M_PI)*0.033;
-            double dt = delta_time.seconds();
-            if (dt <= 0.0){
-                dt = 0.015; 
-            }
-            speed_error = desired_speed - measured_speed;
-
-            intergral_speed_error += speed_error * dt;
-            if(intergral_speed_error > 1.0) 
-                intergral_speed_error = 1.0;
-            if(intergral_speed_error < -1.0) 
-                intergral_speed_error = -1.0;
-
-            // motor_speed_cmd = motor_speed_cmd+ (speed_error*kp+((speed_error-prior_speed_error)/delta_time.seconds())*kd)*0.0047/battery_voltage;
-            motor_speed_cmd = motor_speed_cmd + (speed_error*kp + ((speed_error-prior_speed_error)/dt)*kd + ki*intergral_speed_error) * km/battery_voltage;
-
+            measured_speed = (joint_speed_measured/(720.0*4.0))*((13.0*19.0)/(70.0*30.0))*(2.0*M_PI)*0.033;
+            speed_error = desired_speed-measured_speed;
+            motor_speed_cmd = motor_speed_cmd+ (speed_error*kp+((speed_error-prior_speed_error)/delta_time.seconds())*kd)*0.0047/battery_voltage;
             prior_speed_error = speed_error;
 
             // clip pwm command to not exceed 0.3
             if (motor_speed_cmd>0.3)
-                motor_speed_cmd = 0.3;
+                motor_speed_cmd =0.3;
 
             // check for motor deadband at PWM ~|0.03|
-            if (motor_speed_cmd < 0.01 && motor_speed_cmd >= 0 && desired_speed > 0)
-                motor_speed_cmd = 0.01 + motor_speed_cmd;
-            if (motor_speed_cmd < 0.0 && motor_speed_cmd >= -0.01 && desired_speed < 0)
-                motor_speed_cmd = -0.01 + motor_speed_cmd;
+            if (motor_speed_cmd<0.01 && motor_speed_cmd >=0 && desired_speed > 0)
+                motor_speed_cmd =0.01+motor_speed_cmd;
+            if (motor_speed_cmd<0.0 && motor_speed_cmd >=-0.01&& desired_speed < 0)
+                motor_speed_cmd =-0.01+motor_speed_cmd;
 
             if (motor_speed_cmd<-0.3)
                 motor_speed_cmd = -0.3;
@@ -384,8 +371,6 @@ private:
         else
         {
             motor_speed_cmd = 0;
-            intergral_speed_error = 0.0;
-            prior_speed_error = 0.0;
         }
 
         // motor channel mapping
@@ -417,9 +402,9 @@ private:
         delete[] channels;
         delete[] buffer;
 
-        RCLCPP_INFO(this->get_logger(),"Measured Linear Speed is %f", measured_speed);
-        RCLCPP_INFO(this->get_logger(),"Speed Error is %f", speed_error);
-        RCLCPP_INFO(this->get_logger(),"Command is %f", motor_speed_cmd);
+        // RCLCPP_INFO(this->get_logger(),"Measured Linear Speed is %f", measured_speed);
+        // RCLCPP_INFO(this->get_logger(),"Speed Error is %f", speed_error);
+        // RCLCPP_INFO(this->get_logger(),"Command is %f", motor_speed_cmd);
         // RCLCPP_INFO(this->get_logger(),"Time is %f", delta_time.seconds());
 
         end_time_ = start_time;
@@ -712,11 +697,10 @@ private:
     // speed controller parameters
     double desired_rotation_speed = 0;
     double speed_error = 0;
-    double kp = 2;//20;
-    double kd = 0.1;//0.05;
-    double ki = 0.5;
-    double intergral_speed_error = 0.0;
-    double km = 0.0047; // Volt/rad/s
+    double kp = 20;
+    double kd = 0.1;
+    double ki = 0.01;
+    double km = 0.0047; // v/rad/s
     double joint_speed_measured = 0.0;
     double battery_voltage = 0;
     double desired_speed= 0;

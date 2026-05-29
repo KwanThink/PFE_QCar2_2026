@@ -1,0 +1,109 @@
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found image_transport: 3.1.7 (/opt/ros/humble/share/image_transport/cmake)
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found control_msgs: 4.4.0 (/opt/ros/humble/share/control_msgs/cmake)
+-- Found qcar2_interfaces: 0.0.0 (/home/nvidia/ros2_qcar2_nlmpc/install/qcar2_interfaces/share/qcar2_interfaces/cmake)
+-- Found tf2_ros: 0.25.5 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Building qcar2_nlmpc_controller with generated acados solver
+-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/nvidia/ros2_qcar2_nlmpc/src/qcar2_nodes/include;/home/nvidia/ros2_qcar2_nlmpc/src/qcar2_nodes/acados_solver/qcar2_solver
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nvidia/ros2_qcar2_nlmpc/build/qcar2_nodes
+[35m[1mScanning dependencies of target qcar2_hardware[0m
+[35m[1mScanning dependencies of target qcar2_nlmpc_controller[0m
+[35m[1mScanning dependencies of target qcar2_odometry[0m
+[ 53%] Built target rgbd
+[ 53%] Built target lidar
+[ 53%] Built target fixed_lidar_frame
+[ 53%] Built target csi
+make[2]: Warning: File '/home/nvidia/ros2_qcar2_nlmpc/src/qcar2_nodes/src/qcar2_hardware.cpp' has modification time 31357074 s in the future
+make[2]: Warning: File '/home/nvidia/ros2_qcar2_nlmpc/src/qcar2_nodes/src/qcar2_odometry.cpp' has modification time 27130235 s in the future
+make[2]: Warning: File '/home/nvidia/ros2_qcar2_nlmpc/src/qcar2_nodes/src/qcar2_nlmpc_controller.cpp' has modification time 31529195 s in the future
+[ 60%] [32mBuilding CXX object CMakeFiles/qcar2_hardware.dir/src/qcar2_hardware.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/qcar2_odometry.dir/src/qcar2_odometry.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/qcar2_nlmpc_controller.dir/src/qcar2_traj.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/qcar2_nlmpc_controller.dir/src/qcar2_nlmpc_controller.cpp.o[0m
+[ 86%] [32m[1mLinking CXX executable qcar2_odometry[0m
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 86%] Built target qcar2_odometry
+[ 93%] [32m[1mLinking CXX executable qcar2_hardware[0m
+[100%] [32m[1mLinking CXX executable qcar2_nlmpc_controller[0m
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target qcar2_hardware
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target qcar2_nlmpc_controller
+-- Install configuration: ""
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/libacados_ocp_solver_qcar2_single_track.so
+-- Installing: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/qcar2_hardware
+-- Set runtime path of "/home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/qcar2_hardware" to ""
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/rgbd
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/lidar
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/csi
+-- Installing: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/qcar2_nlmpc_controller
+-- Set runtime path of "/home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/qcar2_nlmpc_controller" to "$ORIGIN:/home/nvidia/acados/lib"
+-- Installing: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/qcar2_odometry
+-- Set runtime path of "/home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/qcar2_odometry" to ""
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/lib/qcar2_nodes/fixed_lidar_frame
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//launch
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//launch/qcar2_nlmpc_bringup_launch.py
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//include
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//include/qcar2_nlmpc_controller.hpp
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//include/qcar2_traj.hpp
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/generating_qcar2_solver.py
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/acados_solver_qcar2_single_track.o
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/Makefile
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/acados_sim_solver_qcar2_single_track.h
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/acados_sim_solver_qcar2_single_track.c
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/main_qcar2_single_track.c
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/qcar2_single_track_model
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/qcar2_single_track_model/qcar2_single_track_expl_vde_adj.c
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/qcar2_single_track_model/qcar2_single_track_expl_ode_fun.o
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/qcar2_single_track_model/qcar2_single_track_expl_vde_adj.o
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/qcar2_single_track_model/qcar2_single_track_expl_ode_fun.c
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/qcar2_single_track_model/qcar2_single_track_model.h
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/qcar2_single_track_model/qcar2_single_track_expl_vde_forw.o
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/qcar2_single_track_model/qcar2_single_track_expl_vde_forw.c
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/acados_solver_qcar2_single_track.c
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/main_sim_qcar2_single_track.c
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/acados_solver.pxd
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/acados_solver_qcar2_single_track.h
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/acados_ocp_qcar2_single_track.json
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//acados_solver/qcar2_solver/libacados_ocp_solver_qcar2_single_track.so
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//config
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//config/qcar2_nlmpc.yaml
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes//config/qcar2_localization_nlmpc.yaml
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/ament_index/resource_index/package_run_dependencies/qcar2_nodes
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/ament_index/resource_index/parent_prefix_path/qcar2_nodes
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/environment/ament_prefix_path.sh
+-- Installing: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/environment/path.sh
+-- Installing: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/environment/path.dsv
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/local_setup.bash
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/local_setup.sh
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/local_setup.zsh
+-- Installing: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/local_setup.dsv
+-- Installing: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/package.dsv
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/ament_index/resource_index/packages/qcar2_nodes
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/cmake/qcar2_nodesConfig.cmake
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/cmake/qcar2_nodesConfig-version.cmake
+-- Up-to-date: /home/nvidia/ros2_qcar2_nlmpc/install/qcar2_nodes/share/qcar2_nodes/package.xml

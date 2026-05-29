@@ -1,0 +1,52 @@
+qcar2_nlmpc_controller:
+  ros__parameters:
+    # Frames and topics
+    map_frame: map
+    base_frame: base_link
+    goal_topic: /goal_pose
+    joint_state_topic: qcar2_joint
+    command_topic: qcar2_motor_speed_cmd
+    reference_path_topic: /qcar2_nlmpc/reference_path
+
+    # Runtime timing and safety
+    control_period: 0.02
+    transform_timeout: 0.10
+    feedback_timeout: 0.25
+    goal_position_tolerance: 0.1
+    stop_on_solver_failure: true
+
+    # Single-track model copied from the simulation project
+    wheelbase: 0.25725
+    Ts: 0.02
+
+    # NLMPC horizon and constraints
+    mpc_N: 8
+    vx_min: -1.0
+    vx_max: 1.0
+    delta_min: -0.5236
+    delta_max: 0.5236
+    ax_min: -0.2
+    ax_max: 0.2
+
+    # Weights kept for documentation and solver-generation consistency
+    Q: [5.0, 5.0, 1.0, 0.5]
+    R: [0.4, 0.4]
+    Qe: [10.0, 10.0, 1.0, 1.0]
+
+    # Flatness-based Bezier trajectory generation
+    # In auto mode, P0 comes from map -> base_link, Pend comes from /goal_pose,
+    # and intermediate waypoints are sampled from the cubic Hermite geometry.
+    trajectory_generation_mode: auto
+    number_of_waypoints: 4
+
+    # User-defined segment times. The number of values must be number_of_waypoints - 1.
+    # Example: number_of_waypoints = 4 => 3 segment times.
+    segment_times: [4.0, 4.0, 4.0]
+
+    # default_speed is only used as fallback when segment_times is empty.
+    default_speed: 0.5
+    minimum_segment_time: 1.0
+    intermediate_tangent_scale: 0.55
+    minimum_goal_distance: 0.05
+    zero_endpoint_steering: true
+

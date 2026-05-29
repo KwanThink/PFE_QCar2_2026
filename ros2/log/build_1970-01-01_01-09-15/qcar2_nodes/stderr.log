@@ -1,0 +1,38 @@
+make[2]: Warning: File '/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp' has modification time 1702938796 s in the future
+make[2]: Warning: File '/home/nvidia/ros2/src/qcar2_nodes/src/nav2_qcar_command_convert.cpp' has modification time 542 s in the future
+make[2]: Warning: File '/home/nvidia/ros2/src/qcar2_nodes/src/fixed_lidar_frame.cpp' has modification time 542 s in the future
+make[2]: Warning: File '/home/nvidia/ros2/src/qcar2_nodes/src/qcar2_hardware.cpp' has modification time 949 s in the future
+make[2]: Warning: File '/home/nvidia/ros2/src/qcar2_nodes/src/fixed_lidar_frame_virtual.cpp' has modification time 542 s in the future
+make[2]: Warning: File '/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp' has modification time 1702938796 s in the future
+make[2]: Warning: File '/home/nvidia/ros2/src/qcar2_nodes/src/csi.cpp' has modification time 542 s in the future
+make[2]: Warning: File '/home/nvidia/ros2/src/qcar2_nodes/src/rgbd.cpp' has modification time 542 s in the future
+In file included from [01m[K/usr/include/c++/9/unordered_map:46[m[K,
+                 from [01m[K/usr/include/c++/9/functional:61[m[K,
+                 from [01m[K/home/nvidia/ros2/src/qcar2_nodes/src/fixed_lidar_frame.cpp:2[m[K:
+/usr/include/c++/9/bits/hashtable.h: In instantiation of ‘[01m[Kclass std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, false> >[m[K’:
+[01m[K/usr/include/c++/9/bits/unordered_set.h:916:18:[m[K   required from ‘[01m[Kclass std::unordered_multiset<int>[m[K’
+[01m[K/usr/include/c++/9/bits/unordered_set.h:1629:33:[m[K   required from here
+[01m[K/usr/include/c++/9/bits/hashtable.h:339:22:[m[K [01;31m[Kinternal compiler error: [m[KSegmentation fault
+  339 |       __bucket_type  [01;31m[K_M_single_bucket[m[K = nullptr;
+      |                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+0xffff7bdd4e0f __libc_start_main
+	../csu/libc-start.c:308
+Please submit a full bug report,
+with preprocessed source if appropriate.
+Please include the complete backtrace with any bug report.
+See <file:///usr/share/doc/gcc-9/README.Bugs> for instructions.
+make[2]: *** [CMakeFiles/fixed_lidar_frame.dir/build.make:63: CMakeFiles/fixed_lidar_frame.dir/src/fixed_lidar_frame.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/fixed_lidar_frame.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.5
+/usr/bin/ld: warning: libopencv_core.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.5
+/usr/bin/ld: warning: libopencv_core.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make: *** [Makefile:141: all] Error 2

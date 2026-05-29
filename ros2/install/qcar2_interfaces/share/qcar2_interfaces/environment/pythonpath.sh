@@ -1,3 +1,1 @@
-# generated from ament_package/template/environment_hook/pythonpath.sh.in
-
-ament_prepend_unique_value PYTHONPATH "$AMENT_CURRENT_PREFIX/lib/python3.9/site-packages"
+/home/nvidia/ros2/build/qcar2_interfaces/ament_cmake_environment_hooks/pythonpath.sh

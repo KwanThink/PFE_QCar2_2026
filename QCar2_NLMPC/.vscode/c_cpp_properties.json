@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/generated/acados_ocp",
+        "${workspaceFolder}/generated/acados_ocp/**",
+        "${workspaceFolder}/generated/acados_sim",
+        "${workspaceFolder}/generated/acados_sim/**",
+        "/home/khanh/deps/acados/include",
+        "/home/khanh/deps/acados/include/**",
+        "/home/khanh/deps/acados/external/blasfeo/include",
+        "/home/khanh/deps/acados/external/hpipm/include"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c99",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
+}
+
