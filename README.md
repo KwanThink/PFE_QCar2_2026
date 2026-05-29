@@ -86,16 +86,7 @@ ros2 launch qcar2_nodes qcar2_cartographer_launch.py
 Launch file for running the Cartographer SLAM pipeline independently.  
 It is mainly used for mapping, occupancy grid generation, and SLAM debugging.
 
-### 3. Bezier Trajectory Visualization
-
-```bash
-ros2 launch qcar2_nodes qcar2_bezier_launch.py
-```
-
-Launch file for generating and visualizing the QCar2 Bezier trajectory in RViz.  
-It uses the trajectory configuration from `qcar2_nodes/config/qcar2_trajectory.yaml` and the map stored in the QCar2 runtime environment.
-
-### 4. Full Localization and Navigation Launch
+### 3. Full Localization and Navigation Launch
 
 ```bash
 ros2 launch qcar2_nodes qcar2_localize_and_nav_launch.py
