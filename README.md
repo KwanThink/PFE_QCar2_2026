@@ -104,20 +104,6 @@ ros2 launch qcar2_nodes qcar2_localize_and_nav_launch.py
 Launch file for localization and navigation using an existing map.  
 It starts the QCar2 hardware, odometry, LiDAR, AMCL localization, Nav2 navigation, and optional RViz visualization.
 
-## Main Demo Commands
-
-For the current portfolio milestone, the two most important launch files are:
-
-```bash
-ros2 launch qcar2_nodes qcar2_slam_and_nav_bringup_launch.py
-```
-
-```bash
-ros2 launch qcar2_nodes qcar2_bezier_launch.py
-```
-
----
-
 ## SLAM and Navigation
 
 The SLAM and navigation pipeline is launched using:
@@ -141,20 +127,6 @@ ros2/src/qcar2_nodes/config/qcar2_slam_and_nav.yaml
 ```
 
 This setup is intended for running SLAM and navigation on the physical QCar2 platform using the Jetson Orin onboard computer.
-
----
-
-## Navigation Command Conversion
-
-Nav2 publishes velocity commands using standard ROS 2 messages such as `geometry_msgs/Twist`.
-
-The QCar2 platform requires its own motor command format. The node below acts as an adapter between Nav2 and the QCar2 hardware interface:
-
-```bash
-ros2/src/qcar2_nodes/src/nav2_qcar_command_convert.cpp
-```
-
-It converts Nav2 velocity commands into QCar2-specific motor commands for throttle and steering.
 
 ---
 
@@ -183,7 +155,7 @@ QCar2_NLMPC_SingleTrackModel
 Both projects use the same general workflow:
 
 ```text
-build solver -> generate trajectory -> run NLMPC
+clean generated files -> build solver -> generate trajectory -> run NLMPC
 ```
 
 All main parameters are configured in:
@@ -194,11 +166,14 @@ config/qcar2_nlmpc.yaml
 
 This file contains the model parameters, constraints, MPC weights, acados settings, reference path settings, simulation initial condition, and output directory settings.
 
+The cleaning step is important when configuration values are changed, especially values related to the solver or generated code. It removes the old generated acados files so that the next solver build is created from the updated configuration.
+
 #### Run `QCar2_NLMPC`
 
 ```bash
 cd QCar2_NLMPC
 source setup_env.sh
+python scripts/clean_generated.py
 python scripts/build_solver.py
 python scripts/generate_trajectory.py
 python scripts/qcar2_nlmpc.py
@@ -217,6 +192,7 @@ This is the file to edit if the waypoint list, heading boundary condition, segme
 ```bash
 cd QCar2_NLMPC_SingleTrackModel
 source setup_env.sh
+python scripts/clean_generated.py
 python scripts/build_solver.py
 python scripts/generate_trajectory.py
 python scripts/qcar2_nlmpc.py
@@ -232,15 +208,25 @@ This is the file to edit if the waypoint list, heading boundary condition, segme
 
 #### When to rerun the scripts
 
-If the solver-related configuration is changed, for example model parameters, constraints, MPC horizon, MPC weights, or acados settings, run the full sequence again:
+If the solver-related configuration is changed, for example model parameters, constraints, MPC horizon, MPC weights, acados settings, generated solver directory, or generated simulation directory, run the full clean sequence again:
 
 ```bash
+python scripts/clean_generated.py
 python scripts/build_solver.py
 python scripts/generate_trajectory.py
 python scripts/qcar2_nlmpc.py
 ```
 
-If only the trajectory definition is changed, for example waypoints, heading angles, segment times, or Bezier settings inside the trajectory file, it is usually enough to regenerate the trajectory and run the NLMPC simulation again:
+If the reference path settings inside `config/qcar2_nlmpc.yaml` are changed, it is also safer to run the full clean sequence:
+
+```bash
+python scripts/clean_generated.py
+python scripts/build_solver.py
+python scripts/generate_trajectory.py
+python scripts/qcar2_nlmpc.py
+```
+
+If only the trajectory definition file is changed, for example waypoints, heading angles, segment times, or Bezier settings inside the trajectory file, regenerate the trajectory and run the NLMPC simulation again:
 
 ```bash
 python scripts/generate_trajectory.py

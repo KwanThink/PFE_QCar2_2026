@@ -8,11 +8,6 @@ This folder contains screenshots and video results from the QCar2 ROS 2 autonomo
 
 Visualization of QCar2 sensor data, including CSI cameras, RealSense RGB-D camera, and LiDAR data.
 
-## Bezier Trajectory Visualization
-
-![Bezier trajectory](Bezier_trajectory.png)
-
-Bezier trajectory generated for the QCar2 platform and visualized in RViz on top of the map.
 
 ## Localization and Navigation Demo
 
