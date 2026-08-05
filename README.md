@@ -6,7 +6,7 @@ This repository contains a ROS 2 workspace for the **Quanser QCar2 physical plat
 
 ---
 ## Experiment videos
-1) Non-linear MPC (NMPC) tracks a reference trajectory: https://youtu.be/otPlT7Fqn6g
+Non-linear MPC (NMPC) tracks a reference trajectory: https://youtu.be/otPlT7Fqn6g
 
 ---  
 ## Current Completed Milestone
