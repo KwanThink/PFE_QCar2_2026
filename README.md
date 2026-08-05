@@ -5,7 +5,10 @@
 This repository contains a ROS 2 workspace for the **Quanser QCar2 physical platform**, developed and tested on an **NVIDIA Jetson Orin** onboard computer. The project goal is: **Control Implementation for a Safe and Secure Self-driving Car**.
 
 ---
+## Experiment videos
+1) Non-linear MPC (NMPC) tracks a reference trajectory: https://youtu.be/otPlT7Fqn6g
 
+---  
 ## Current Completed Milestone
 
 The current GitHub version focuses on the completed system exploration, SLAM/Nav2 bringup, and trajectory generation milestones.
