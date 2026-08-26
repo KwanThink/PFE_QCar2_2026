@@ -11,6 +11,8 @@ Results from the physical QCar2 platform, including sensor visualization and a R
 
 Simulation results obtained in Quanser QLabs for the implemented MPC-based controllers are available in the [`QLabs_Simulation_Results`](./QLabs_Simulation_Results) directory.
 
+The simulation video is available here: https://youtu.be/w3ytkV00ATY
+
 The simulation results include:
 
 - NMPC with Gurobi solver
