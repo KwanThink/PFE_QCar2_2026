@@ -8,6 +8,7 @@ This repository contains a ROS 2 workspace for the **Quanser QCar2 physical plat
 ##Results
 ### Simulation Results:
 Results from the physical QCar2 platform, including sensor visualization and a ROS 2 localization and navigation demonstration, are available in the [`QCar2_Demo_Results`](./QCar2_Demo_Results) directory.
+
 Simulation results obtained in Quanser QLabs for the implemented MPC-based controllers are available in the [`QLabs_Simulation_Results`](./QLabs_Simulation_Results) directory.
 
 The simulation results include:
