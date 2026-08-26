@@ -5,7 +5,18 @@
 This repository contains a ROS 2 workspace for the **Quanser QCar2 physical platform**, developed and tested on an **NVIDIA Jetson Orin** onboard computer. The project goal is: **Control Implementation for a Safe and Secure Self-driving Car**.
 
 ---
-## Experiment videos
+##Results
+### Simulation Results:
+Results from the physical QCar2 platform, including sensor visualization and a ROS 2 localization and navigation demonstration, are available in the [`QCar2_Demo_Results`](./QCar2_Demo_Results) directory.
+Simulation results obtained in Quanser QLabs for the implemented MPC-based controllers are available in the [`QLabs_Simulation_Results`](./QLabs_Simulation_Results) directory.
+
+The simulation results include:
+
+- NMPC with Gurobi solver
+- FLMPC with Gurobi solver
+- OAMPC with Gurobi solver
+- OAMPC with obstacle activation using the Gurobi solver
+### Experiment videos:
 Non-linear MPC (NMPC) tracks a reference trajectory: https://youtu.be/otPlT7Fqn6g
 
 ---  
