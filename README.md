@@ -20,7 +20,7 @@ The simulation results include:
 - OAMPC with Gurobi solver
 - OAMPC with obstacle activation using the Gurobi solver
 ### Experiment videos:
-Non-linear MPC (NMPC) tracks a reference trajectory: https://youtu.be/otPlT7Fqn6g
+Non-linear MPC (NMPC) tracks a reference trajectory: [https://youtu.be/otPlT7Fqn6g](https://youtu.be/I_gmxMKuoCM)
 
 ---  
 ## Current Completed Milestone
